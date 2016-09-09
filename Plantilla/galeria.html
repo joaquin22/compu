@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Bienvenido a mi pagina</title>
+
+	<link rel="stylesheet" media="screen" href="CSS/main.css"/>
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="Dave Shea"/>
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design."/>
+	<meta name="robots" content="all"/>
+
+	<script src="http://use.typekit.net/qoj3gsc.js" type="text/javascript"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+	<style type="text/css">
+
+            /* Demo styles */
+            
+            .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:620px;margin:20px auto;}
+            h1{font-size:12px;font-weight:normal;color:#ddd;margin:0;}
+            p{margin:0 0 20px}
+            .cred{margin-top:20px;font-size:11px;}
+
+            /* This rule is read by Galleria to define the gallery height: */
+            #galleria{height:320px}
+
+    </style>
+
+        <!-- load jQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script  type="text/javascript" src="JS/galleria-1.4.5.min.js"></script>
+
+
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<!--
+
+
+
+	View source is a feature, not a bug. Thanks for your curiosity and
+	interest in participating!
+
+	Here are the submission guidelines for the new and improved csszengarden.com:
+
+	- CSS3? Of course! Prefix for ALL browsers where necessary.
+	- go responsive; test your layout at multiple screen sizes.
+	- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
+	- Graceful degradation is acceptable, and in fact highly encouraged.
+	- use classes for styling. Don't use ids.
+	- web fonts are cool, just make sure you have a license to share the files. Hosted 
+	  services that are applied via the CSS file (ie. Google Fonts) will work fine, but
+	  most that require custom HTML won't. TypeKit is supported, see the readme on this
+	  page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
+
+	And a few tips on building your CSS file:
+
+	- use :first-child, :last-child and :nth-child to get at non-classed elements
+	- use ::before and ::after to create pseudo-elements for extra styling
+	- use multiple background images to apply as many as you need to any element
+	- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
+	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
+
+		
+-->
+
+<body id="css-zen-garden">
+<div class="page-wrapper">
+
+	<div class="intro" id="zen-intro">
+		<div class="header" id="galery">
+			<h1>CSS Zen Garden</h1>
+			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+		</div>
+		
+		<div class="preamble" id="zen-preamble">
+			<div id="article">
+                <div class="content">
+                    
+
+                    <!-- Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary -->
+
+                    <div id="galleria">
+                        <img src="Pokémon/061. Bulbasaur.jpg" title="Bulbasaur" alt="001"/>
+                        <img src="Pokémon/021. Ivysaur.jpg" title="Ivysaur" alt="002" />
+                        <img src="Pokémon/005. Venusaur.jpg" title="Venusaur" alt="003" />
+                        <img src="Pokémon/062. Charmander.jpg" title="Charmander" alt="004" />
+                        <img src="Pokémon/142. Charmeleon.jpg" title="Charmeleon" alt="005" />
+                        <img src="Pokémon/112. Charizard.jpg" title="Charizard" alt="006" />
+                        <img src="Pokémon/102. Squirtle.jpg" title="Squirtle" alt="007" />
+                        <img src="Pokémon/143. Wartortle.jpg" title="Wartortle" alt="008" />
+                        <img src="Pokémon/073. Blastoise.jpg" title="Blastoise." alt="009" />
+                        <img src="Pokémon/059. Caterpie.jpg" title="Caterpie" alt="010" />
+                        <img src="Pokémon/081. Metapod.jpg" title="Metapod" alt="011" />
+                        <img src="Pokémon/016. Butterfree.jpg" title="Butterfree" alt="012" />
+                        <img src="Pokémon/091. Weedle.jpg" title="Weedle" alt="013" />
+                        <img src="Pokémon/083. Kakuna.jpg" title="Kakuna" alt="014" />
+                        <img src="Pokémon/100. Beedrill.jpg" title="Beedrill.jpg" alt="015" />
+                        <img src="Pokémon/008. Pidgey.jpg" title="Pidgey" alt="016" />
+                        <img src="Pokémon/108. Pidgeotto.jpg" title="Pidgeotto" alt="017" />
+                        <img src="Pokémon/149. Pidgeot.jpg" title="Pidgeot" alt="018" />
+                        <img src="Pokémon/006. Rattata.jpg" title="Rattata" alt="019" />
+                        <img src="Pokémon/053. Raticate.jpg" title="Raticate" alt=" 020" />
+                        <img src="Pokémon/044. Spearow.jpg" title="Spearow" alt="021" />
+                        <img src="Pokémon/007. Fearow.jpg" title="Fearow" alt="022" />
+                        <img src="Pokémon/121. Ekans.jpg" title="Ekans" alt="023" />
+                        <img src="Pokémon/150. Arbok.jpg" title="Arbok" alt="024" />
+                        <img src="Pokémon/064. Pikachu.jpg" title="Pikachu" alt="025" />
+                        <img src="Pokémon/077. Raichu.jpg" title="Raichu" alt="026" />
+                        <img src="Pokémon/060. Sandshrew.jpg" title="Sandshrew" alt="027" />
+                        <img src="Pokémon/127. Sandslash.jpg" title="Sandslash" alt="028" />
+                        <img src="Pokémon/092. Nidoran.jpg" title="Nidoran" alt="029" />
+                        <img src="Pokémon/099. Nidorina.jpg" title="Nidorina" alt="030" />
+                        <img src="Pokémon/078. Nidoqueen.jpg" title="Nidoqueen" alt="031" />
+                        <img src="Pokémon/003. Nidoran.jpg" title="Nidoran" alt="032" />
+                        <img src="Pokémon/019. Nidorino.jpg" title="Nidorino" alt="033" />
+                        <img src="Pokémon/025. Nidoking.jpg" title="Nidoking" alt="034" />
+                        <img src="Pokémon/084. Clefairy.jpg" title="Clefairy" alt="035" />
+                        <img src="Pokémon/031. Clefable.jpg" title="Clefable" alt="036" />
+                        <img src="Pokémon/110. Vulpix.jpg" title="Vulpix" alt="037" />
+                        <img src="Pokémon/120. Ninetales.jpg" title="Ninetales" alt="038" />
+                        <img src="Pokémon/028. Jigglypuff.jpg" title="Jigglypuff" alt="038" />
+                        <img src="Pokémon/032. Wigglytuff.jpg" title="Wigglytuff" alt="040" />
+                        <img src="Pokémon/033. Zubat.jpg" title="Zubat" alt="041" />
+                        <img src="Pokémon/117. Golbat.jpg" title="Golbat" alt="042" />
+                        <img src="Pokémon/075. Oddish.jpg" title="Oddish.jpg" alt="043" />
+                        <img src="Pokémon/141. Gloom.jpg" title="Gloom" alt="044" />
+                        <img src="Pokémon/087. Vileplume.jpg" title="Vileplume" alt="045" />
+                        <img src="Pokémon/051. Paras.jpg" title="Paras" alt="046" />
+                        <img src="Pokémon/104. Parasect.jpg" title="Parasect" alt="047" />
+                        <img src="Pokémon/067. Venonat.jpg" title="Venonat" alt="048" />
+                        <img src="Pokémon/017. Venomoth.jpg" title="Venomoth" alt="09" />
+<!--                    <img src="Pokémon/002. Diglett.jpg" title="Diglett" alt="050" />
+                        <img src="Pokémon/116. Dugtrio.jpg" title="Dugtrio" alt="051" />
+                        <img src="Pokémon/035. Meowth.jpg" title="Meowth" alt="052" />
+                        <img src="Pokémon/050. Persian.jpg" title="Persian" alt="053" />
+                        <img src="Pokémon/129. Psyduck.jpg" title="Psyduck" alt="054" />
+                        <img src="Pokémon/020. Golduck.jpg" title="Golduck" alt="055" />
+                        <img src="Pokémon/004. Mankey.jpg" title="Mankey" alt="056" />
+                        <img src="Pokémon/034. Primeape.jpg" title="Primeape" alt="057" />
+                        <img src="Pokémon/136. Growlithe.jpg" title="Growlithe" alt="058" />
+                        <img src="Pokémon/130. Arcanine.jpg" title="Arcanine" alt="059" />
+                        <img src="Pokémon/018. Poliwag.jpg" title="Poliwag" alt="060" />
+                        <img src="Pokémon/074. Poliwhirl.jpg" title="Poliwhirl" alt="061" />
+                        <img src="Pokémon/015. Poliwrath.jpg" title="Poliwrath" alt="062" />
+                        <img src="Pokémon/027. Abra.jpg" title="Abra" alt="063" />
+                        <img src="Pokémon/055. Kadabra.jpg" title="Kadabra" alt="064" />
+                        <img src="Pokémon/065. Alakazam.jpg" title="Alakazam" alt="065" />
+                        <img src="Pokémon/093. Machop.jpg" title="Machop" alt="066" />
+                        <img src="Pokémon/068. Machoke.jpg" title="Machoke" alt="067" />
+                        <img src="Pokémon/113. Machamp.jpg" title="Machamp" alt="068" />
+                        <img src="Pokémon/079. Bellsprout.jpg" title="Bellsprout" alt="069" />
+                        <img src="Pokémon/056. Weepinbell.jpg" title="Weepinbell" alt="070" />
+                        <img src="Pokémon/023. Victreebel.jpg" title="Victreebel.jpg" alt="071" />
+                        <img src="Pokémon/124. Tentacool.jpg" title="Tentacool" alt="072" />
+                        <img src="Pokémon/145. Tentacruel.jpg" title="Tentacruel" alt="073" />
+                        <img src="Pokémon/037. Geodude.jpg" title="Geodude" alt="074" />
+                        <img src="Pokémon/139. Graveler.jpg" title="Graveler" alt="075" />
+                        <img src="Pokémon/063. Golem.jpg" title="Golem" alt="076" />
+                        <img src="Pokémon/013. Ponyta.jpg" title="Ponyta" alt="077" />
+                        <img src="Pokémon/038. Rapidash.jpg" title="Rapidash" alt="078" />
+                        <img src="Pokémon/148. Slowpoke.jpg" title="Slowpoke" alt="079" />
+                        <img src="Pokémon/048. Slowbro.jpg" title="Slowbro" alt="080" />
+                        <img src="Pokémon/054. Magnemite.jpg" title="Magnemite" alt="081" />
+                        <img src="Pokémon/039. Magneton.jpg" title="Magneton" alt="082" />
+                        <img src="Pokémon/026. Farfetch'd.jpg" title="Farfetch'd" alt="083" />
+                        <img src="Pokémon/066. Doduo.jpg" title="Doduo" alt="084" />
+                        <img src="Pokémon/085. Dodrio.jpg" title="Dodrio" alt="085" />
+                        <img src="Pokémon/046. Seel.jpg" title="Seel" alt="086" />
+                        <img src="Pokémon/107. Dewgong.jpg" title="Dewgong" alt="087" />
+                        <img src="Pokémon/022. Grimer.jpg" title="Grimer" alt="088" />
+                        <img src="Pokémon/106. Muk.jpg" title="Muk" alt="089" />
+                        <img src="Pokémon/094. Shellder.jpg" title="Shellder" alt="090" />
+                        <img src="Pokémon/058. Cloyster.jpg" title="Cloyster" alt="091" />
+                        <img src="Pokémon/012. Gastly.jpg" title="Gastly" alt="092" />
+                        <img src="Pokémon/101. Haunter.jpg" title="Haunter" alt="093" />
+                        <img src="Pokémon/041. Gengar.jpg" title="Gengar" alt="094" />
+                        <img src="Pokémon/036. Onix.jpg" title="Onix" alt="095" />
+                        <img src="Pokémon/076. Drowzee.jpg" title="Drowzee" alt="096" />
+                        <img src="Pokémon/070. Hypno.jpg" title="Hypno" alt="097" />
+                        <img src="Pokémon/088. Krabby.jpg" title="Krabby" alt="098" />
+                        <img src="Pokémon/029. Kingler.jpg" title="Kingler" alt="099" />
+                        <img src="Pokémon/140. Voltorb.jpg" title="Voltorb" alt="100" />-->
+
+
+                        <a href="https://www.youtube.com/watch?v=Uh0zt_hA4m8">
+                            <span class="video">Pokerap</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                $(function() {
+                    // Load the classic theme
+                    Galleria.loadTheme('galleria.classic.min.js');
+
+                    // Initialize Galleria
+                    Galleria.run('#galleria');
+                });
+                </script>				
+
+			</div>
+		</div>
+	</div>
+
+	<div class="sidebar" id="complementary">
+		<div class="wrapper">
+
+			<div class="design-selection" id="design-selection">
+				<h3 class="select">Select a Design:</h3>
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="index.html" class="design-name">Pagina principal</a>
+						</li>
+
+						<li>
+							<a href="galeria.html" class="design-name">Galeria</a>
+						</li>					
+
+						<li>
+							<a href="form.html" class="design-name">Registro</a>
+						</li>								
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<!--
+
+	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
+	These days we have full ::before and ::after support, favour using those instead.
+	These only remain for historical design compatibility. They might go away one day.
+		
+-->
+
+
+</body>
+</html>

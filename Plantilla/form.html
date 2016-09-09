@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Bienvenido a mi pagina</title>
+
+	<link rel="stylesheet" media="screen" href="CSS/main.css"/>
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml"/>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="Dave Shea"/>
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design."/>
+	<meta name="robots" content="all"/>
+
+	<script src="http://use.typekit.net/qoj3gsc.js" type="text/javascript"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script type="text/javascript">
+	$( function() {
+		$( "#datepicker" ).datepicker();
+	} );
+	</script>
+
+
+
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<!--
+
+
+
+	View source is a feature, not a bug. Thanks for your curiosity and
+	interest in participating!
+
+	Here are the submission guidelines for the new and improved csszengarden.com:
+
+	- CSS3? Of course! Prefix for ALL browsers where necessary.
+	- go responsive; test your layout at multiple screen sizes.
+	- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
+	- Graceful degradation is acceptable, and in fact highly encouraged.
+	- use classes for styling. Don't use ids.
+	- web fonts are cool, just make sure you have a license to share the files. Hosted 
+	  services that are applied via the CSS file (ie. Google Fonts) will work fine, but
+	  most that require custom HTML won't. TypeKit is supported, see the readme on this
+	  page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
+
+	And a few tips on building your CSS file:
+
+	- use :first-child, :last-child and :nth-child to get at non-classed elements
+	- use ::before and ::after to create pseudo-elements for extra styling
+	- use multiple background images to apply as many as you need to any element
+	- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
+	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
+
+		
+-->
+
+<body id="css-zen-garden">
+<div class="page-wrapper">
+
+	<div class="intro" id="zen-intro">
+		<div class="header" id="bann">
+			<h1>CSS Zen Garden</h1>
+			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+		</div>
+		
+		<div class="main suporting" id="zen-supporting">
+			<div class="form" id="zen-explanation">
+			<div id="article">
+				<h3>dasdasd</h3>
+				<form action="">
+					<p>
+						<label for="fname">Nombre:</label>
+				    	<input type="text" id="fname" name="firstname" />	
+					</p>
+				    
+				    <p>
+				    	<label for="lname">Apellido:</label>
+				    	<input type="text" id="lname" name="lastname"/>	
+				    </p>
+				    
+					<p>
+						<label for="mail">Correo electronico</label>
+						<input type="text" id="mail" name="mail" />
+					</p>
+
+					<p>
+						<label for="country">Sexo:</label>
+					    <select id="country" name="country">
+							<option value="masc">Masculino</option>
+					        <option value="Fem">Femenino</option>
+					    </select>	
+					</p>
+				    <p>
+		  		    	<label for="datepicker">Fecha de Nacimieto:</label>
+				    	<input type="text" id="datepicker" name="fnac" />
+				    </p>
+
+				  	<p>
+				  		<button type="submit" onclick="enviar()">Enviar</button>
+				  		<button type="reset">Limpiar</button>		
+				  	</p>
+				</form>				
+			</div>
+		</div>	
+
+		</div>
+
+		
+	</div>
+
+	<div class="sidebar" id="complementary">
+		<div class="wrapper">
+
+			<div class="design-selection" id="design-selection">
+				<h3 class="select">Select a Design:</h3>
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="index.html" class="design-name">Pagina principal</a>
+						</li>
+
+						<li>
+							<a href="galeria.html" class="design-name">Galeria</a>
+						</li>					
+
+						<li>
+							<a href="form.html" class="design-name">Registro</a>
+						</li>								
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<!--
+
+	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
+	These days we have full ::before and ::after support, favour using those instead.
+	These only remain for historical design compatibility. They might go away one day.
+		
+-->
+
+<script type="text/javascript">
+	function enviar(){
+		var name = document.getElementById('fname').value;
+		alert("Gracias por registrarte " + name);
+	}
+</script>
+</body>
+</html>
